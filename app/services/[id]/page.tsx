@@ -7,15 +7,17 @@ import {
 import { getServiceById, getCategoryMeta, SERVICES } from "@/lib/data";
 
 interface Props {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
 export async function generateStaticParams() {
   return SERVICES.map((s) => ({ id: s.id }));
 }
 
-export default function ServiceDetailPage({ params }: Props) {
-  const service = getServiceById(params.id);
+export default async function ServiceDetailPage({ params }: Props) {
+  const { id } = await params;
+
+  const service = getServiceById(id);
   if (!service) notFound();
 
   const cat = getCategoryMeta(service.category);

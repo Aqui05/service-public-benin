@@ -1,4 +1,4 @@
-// File: /home/aqui/portail-services/app/layout.tsx
+// File: /Users/aquilas/Projets/service-public-benin/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

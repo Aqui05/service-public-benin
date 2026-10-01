@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/services/acte-naissance":{},"/services/carte-nationale":{},"/services/passeport":{},"/services/inscription-universite":{},"/services/creation-entreprise":{},"/services/permis-conduire":{},"/services/casier-judiciaire":{},"/services/ifu":{},"/services/assurance-maladie":{},"/services/aide-sociale":{}},"dynamicRoutes":{"/services/[id]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/services/[id]","routeRegex":"^\\/services\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"af875593b577d18a36171a4e34116688","previewModeSigningKey":"f6eb29f46a968e77bc259fe33a3d7b30e58024c3222fd2f5fa94fe03a011ff78","previewModeEncryptionKey":"cfb3693ee4e5b1442f957157a54dfc569cb42bec1889526f52ca4aa81eda0154"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "a4ffe93bb03f1bccf5acda8c38a53200",
+    "previewModeSigningKey": "24d0cedb44090fd7fde0f6eb89563a379085f96df13bf7c996ac2988a5f1352f",
+    "previewModeEncryptionKey": "f164595c8f7b590c35dbded44a34a0bf93057fa1ed86fa113c631249328cf399"
+  }
+}
