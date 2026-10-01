@@ -6,11 +6,11 @@ import ServiceCard from "@/components/ServiceCard";
 import { CATEGORIES, searchServices, getServicesByCategory } from "@/lib/data";
 
 interface Props {
-  searchParams: { q?: string; category?: string };
+  searchParams: Promise<{ q?: string; category?: string }>;
 }
 
-export default function ServicesPage({ searchParams }: Props) {
-  const { q, category } = searchParams;
+export default async function ServicesPage({ searchParams }: Props) {
+  const { q, category } = await searchParams;
 
   let services = q
     ? searchServices(q)
